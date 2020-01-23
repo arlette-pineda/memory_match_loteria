@@ -133,10 +133,13 @@ font-size: 1.5rem;
 }
 
 .modal-content {
-  background-color: blue;
-  border: solid 5px blue;
-  width: 50%;
+  background-color: rgb(51, 207, 235);
+  /* border: solid 5px blue; */
+  width: 30%;
+  height: 40%;
   position: relative;
+  text-align: center;
+  align-items: center;
 }
 
 .hidden {
