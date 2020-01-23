@@ -27,14 +27,10 @@ main {
 }
 
 .card {
-  /* background-image: url('/../assets/images/lfz-card.jpg'); */
-  /* background-position: center;
-  background-size: cover; */
   height: 31%;
   width: 15%;
   margin: 6px;
   position: relative;
-
 }
 
 .card-front, .card-back {
