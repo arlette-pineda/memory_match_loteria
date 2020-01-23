@@ -122,6 +122,23 @@ p {
 font-size: 1.5rem;
 }
 
+.modal-overlay {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.modal-content {
+  background-color: blue;
+  border: solid 5px blue;
+  width: 50%;
+  position: relative;
+}
+
 .hidden {
   display: none;
 }
