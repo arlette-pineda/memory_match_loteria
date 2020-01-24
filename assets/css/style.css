@@ -9,7 +9,7 @@ body {
   height: 100%;
   padding-left: 5%;
   padding-right: 5%;
-  font-family: Tahoma, Geneva, sans-serif
+  font-family: 'Poppins', sans-serif;
 }
 
 main {
@@ -116,6 +116,7 @@ aside {
   text-align: center;
   align-items: center;
   justify-content: center;
+  border-radius: 6px;
 }
 
 p {
@@ -133,15 +134,36 @@ font-size: 1.5rem;
 }
 
 .modal-content {
-  background-color: rgb(51, 207, 235);
+  background-color: rgba(51, 207, 235, 0.98);
   /* border: solid 5px blue; */
-  width: 30%;
-  height: 40%;
+  width: 40%;
+  height: 50%;
   position: relative;
   text-align: center;
   align-items: center;
+  border-radius: 8px;
+  /* font-size: 3rem; */
+}
+
+#reset-button {
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 2.8em;
 }
 
 .hidden {
   display: none;
+}
+
+#stats {
+  font-size: 2.5rem;
+  /* text-decoration: underline overline; */
+}
+
+#congrats {
+  font-size: 3rem;
+}
+
+.display-styling {
+  text-decoration: overline underline;
 }

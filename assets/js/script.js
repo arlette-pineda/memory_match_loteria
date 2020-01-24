@@ -10,16 +10,40 @@ var attemptsDiv = document.getElementById('attempts-score');
 var accuracyDiv = document.getElementById('accuracy-score');
 var attempts = 0;
 var gamesPlayed = 0;
+var cardBacks = document.getElementsByClassName('card-back');
+var resetButton = document.getElementById('reset-button');
 
 function displayStats(){
   gaPlayedDiv.textContent = gamesPlayed
   attemptsDiv.textContent = attempts
-  accuracyDiv.textContent = calculateAccuracy(attempts, matches);
+  accuracyDiv.textContent = calculateAccuracy(attempts, matches); //giving parameters of attempts and matches
 }
 
 function calculateAccuracy(attempts, matches){
-  return (Math.trunc((matches / attempts) * 100)) + "%";
+  if(!attempts){
+    return "0%"; //if attempts are 0(aka falsy), display 0%
+  } else {
+  return ((Math.trunc((matches / attempts) * 100)) + "%");
+  //will give decimal number then *100 to make whole #, .trunc removes decimals, then add % character
+  }
 }
+function resetCards(){
+  var hiddenCards = document.querySelectorAll('.card-back');
+  for(var i = 0; i < hiddenCards.length; i++){
+    hiddenCards[i].classList.remove('hidden');
+  }
+}
+
+function resetGame(){
+  attempts = 0; //resetting to 0
+  gamesPlayed++; //incrementing by 1 game each time resetting
+  displayStats(); //
+  resetCards();
+  // accuracyDiv.textContent = 0;
+  modal.classList.add('hidden');
+}
+
+resetButton.addEventListener('click', resetGame); //adding click event on reset button to reset game
 
 var gameCards = document.getElementById('gameCards');
 gameCards.addEventListener('click', handleClick); //when card area clicked we want it to...
@@ -55,6 +79,6 @@ function handleClick(event){
         secondCardClicked = null; //will reset card clicked
         attempts++; //increases attempts by 1 when cards don't match
         displayStats(); //call displayStats function to update stats display
-    }, 1500);}
+    }, 1000);}
   }
 }
