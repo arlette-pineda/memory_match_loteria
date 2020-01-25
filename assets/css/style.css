@@ -167,3 +167,6 @@ font-size: 1.5rem;
 .display-styling {
   text-decoration: overline underline;
 }
+#main-title {
+  color: coral;
+}
