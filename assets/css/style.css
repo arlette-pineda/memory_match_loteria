@@ -19,11 +19,15 @@ main {
   align-content: center;
 }
 
-.background-img {
+/* .background-img {
   background-image: url('../../assets/images/lfz-background.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+} */
+
+.background-img {
+  background-color: #ffd11a;
 }
 
 .card {
@@ -44,44 +48,45 @@ main {
 }
 
 .card-back {
-background-image: url(/assets/images/lfz-card.jpg);
+background-image: url(/assets/images/blue.jpg);
 }
 
-.js-logo {
-  background-image: url(/assets/images/js-logo.png)
+.el-arpa {
+  background-image: url(/assets/images/el-arpa.jpg)
 }
 
-.css-logo {
-  background-image: url(/assets/images/css-logo.png);
+.el-apache {
+  background-image: url(/assets/images/el-apache.jpg);
 }
 
-.docker-logo {
-  background-image: url(/assets/images/docker-logo.jpg);
+.el-barril {
+  background-image: url(/assets/images/el-barril.jpg);
 }
 
-.github-logo {
-  background-image: url(/assets/images/gitHub-logo.png);
+.el-borracho {
+  background-image: url(/assets/images/el-borracho.jpg);
 }
 
-.html-logo {
-  background-image: url(/assets/images/html-logo.png);
+.el-gorrito {
+  background-image: url(/assets/images/el-gorrito.jpg);
 }
 
-.mysql-logo {
-  background-image: url(/assets/images/mysql-logo.jpg);
+.el-musico {
+  background-image: url(/assets/images/el-musico.jpg);
 }
 
-.node-logo {
-  background-image: url(/assets/images/node-logo.png);
+.el-soldado {
+  background-image: url(/assets/images/el-soldado.jpg);
 }
 
-.php-logo {
-  background-image: url(/assets/images/php-logo.jpeg);
+.el-tambor {
+  background-image: url(/assets/images/el-tambor.jpg);
 }
 
-.react-logo {
-  background-image: url(/assets/images/react-logo.png);
+.el-violoncello {
+  background-image: url(/assets/images/el-violoncello.png);
 }
+
 
 header {
   justify-content: center;
@@ -106,22 +111,34 @@ aside {
   height: 100%;
 }
 
+
 .aside-divs {
-  height: 15%;
-  background-color: lightblue;
+  height: 13%;
+  background-color:  #ff3300;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 5px;
-  display: flex;
   text-align: center;
-  align-items: center;
-  justify-content: center;
   border-radius: 6px;
+  text-shadow: 1px 1px 2px white, 0 0 25px #ffd11a, 0 0 5px white;
+  /* flex-wrap: wrap; */
 }
 
 p {
-font-size: 1.5rem;
+font-size: 1.2rem;
 }
+
+.display-styling {
+  text-decoration: overline underline;
+  position: relative;
+}
+/* .display-styling:after{
+  content: "Juegos Jugados";
+  position: absolute;
+  left: 0;
+  top: 5px;
+} */
+
 
 .modal-overlay {
   position: fixed;
@@ -134,7 +151,7 @@ font-size: 1.5rem;
 }
 
 .modal-content {
-  background-color: rgba(51, 207, 235, 0.98);
+  background-color: rgba(54, 90, 209, 0.97);
   /* border: solid 5px blue; */
   width: 40%;
   height: 50%;
@@ -142,13 +159,19 @@ font-size: 1.5rem;
   text-align: center;
   align-items: center;
   border-radius: 8px;
+  color: #ffd11a;
+  font-family: 'Poppins', sans-serif;
   /* font-size: 3rem; */
 }
 
 #reset-button {
+  font-family: 'Poppins', sans-serif;
   border-radius: 6px;
   padding: 10px;
   font-size: 2.8em;
+  background-color: #ff3300;
+  color: white;
+  border: none;
 }
 
 .hidden {
@@ -156,7 +179,7 @@ font-size: 1.5rem;
 }
 
 #stats {
-  font-size: 2.5rem;
+  font-size: 2rem;
   /* text-decoration: underline overline; */
 }
 
@@ -164,9 +187,9 @@ font-size: 1.5rem;
   font-size: 3rem;
 }
 
-.display-styling {
-  text-decoration: overline underline;
-}
 #main-title {
-  color: coral;
+  color: #ff3300;
+}
+.spanish-trans {
+  text-decoration: none;
 }
