@@ -22,6 +22,6 @@ Try the application live at [https://memory_match.arlettepineda.com](https://mem
 
 ## Preview
 
-![Loteria Memory Match](images/sgt-react.gif)
+![Loteria Memory Match](guides/images/LoteriaMatch.gif)
 
 
