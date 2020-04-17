@@ -84,14 +84,14 @@ function shuffle() {
     'el-soldado', 'el-tambor', 'el-violoncello', 'el-arpa', 'el-apache', 'el-barril',
     'el-borracho', 'el-gorrito', 'el-musico', 'el-soldado', 'el-tambor', 'el-violoncello']
 
-  for (k = 0; k < arr.length; k++){
+  for (var k = 0; k < arr.length; k++){
     var randNum = Math.floor(Math.random() * arr.length);
     var temp = arr[k];
     arr[k] = arr[randNum];
     arr[randNum] = temp;
   }
 
-  for (i = 0; i < arr.length; i++){
+  for (var i = 0; i < arr.length; i++){
   var newMain = document.querySelector('#gameCards');
   var newCard = document.createElement('div');
   newCard.classList.add('card', 'col-2');
@@ -104,4 +104,4 @@ function shuffle() {
   newMain.appendChild(newCard);
   }
 }
-shuffle()
+shuffle();
