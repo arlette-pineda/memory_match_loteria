@@ -1,5 +1,6 @@
 body {
   height: 97vh;
+  background-color: #ffd11a;
 }
 
 .container {
@@ -17,10 +18,6 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-}
-
-.background-img {
-  background-color: #ffd11a;
 }
 
 .card {
@@ -107,10 +104,9 @@ aside {
 
 .aside-divs {
   height: 13%;
+  width: 85%;
   background-color:  #ff3300;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 5px;
+  margin: auto;
   text-align: center;
   border-radius: 6px;
   text-shadow: 1px 1px 2px white, 0 0 25px #ffd11a, 0 0 5px white;
@@ -161,14 +157,49 @@ font-size: 1.2rem;
   display: none;
 }
 
-#stats {
-  font-size: 2rem;
-}
-
 #congrats {
   font-size: 3rem;
 }
 
 #main-title {
   color: #ff3300;
+}
+
+@media screen and (max-width: 710px) {
+  header {
+    margin: .5rem auto 0;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .row.two {
+    display: unset;
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+  aside {
+    height: 10%;
+    margin: auto;
+    padding: 0 .5rem;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  aside div {
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+    margin: .2rem;
+    padding: .2rem 1rem;
+  }
+  main {
+    height: 80%;
+    margin: auto;
+    padding-top: 1rem;
+  }
+
+  /* main div {
+    height: 25%;
+  } */
 }
