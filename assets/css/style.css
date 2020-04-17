@@ -19,13 +19,6 @@ main {
   align-content: center;
 }
 
-/* .background-img {
-  background-image: url('../../assets/images/lfz-background.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
 .background-img {
   background-color: #ffd11a;
 }
@@ -121,7 +114,6 @@ aside {
   text-align: center;
   border-radius: 6px;
   text-shadow: 1px 1px 2px white, 0 0 25px #ffd11a, 0 0 5px white;
-  /* flex-wrap: wrap; */
 }
 
 p {
@@ -132,13 +124,6 @@ font-size: 1.2rem;
   text-decoration: overline underline;
   position: relative;
 }
-/* .display-styling:after{
-  content: "Juegos Jugados";
-  position: absolute;
-  left: 0;
-  top: 5px;
-} */
-
 
 .modal-overlay {
   position: fixed;

@@ -27,12 +27,6 @@ function calculateAccuracy(attempts, matches){
   //will give decimal number then *100 to make whole #, .trunc removes decimals, then add % character
   }
 }
-// function resetCards(){
-//   var hiddenCards = document.querySelectorAll('.card-back');
-//   for(var i = 0; i < hiddenCards.length; i++){
-//     hiddenCards[i].classList.remove('hidden');
-//   }
-// }
 
 function resetGame(){
   attempts = 0; //resetting to 0
@@ -85,24 +79,19 @@ function handleClick(event){
   }
 }
 
-// var arrNew = ['el-arpa', 'el-apache', 'el-barril', 'el-borracho', 'el-gorrito', 'el-musico',
-// 'el-soldado', 'el-tambor', 'el-violoncello', 'el-arpa', 'el-apache', 'el-barril',
-// 'el-borracho', 'el-gorrito', 'el-musico', 'el-soldado', 'el-tambor', 'el-violoncello']
-
-
 function shuffle() {
   var arr = ['el-arpa', 'el-apache', 'el-barril', 'el-borracho', 'el-gorrito', 'el-musico',
     'el-soldado', 'el-tambor', 'el-violoncello', 'el-arpa', 'el-apache', 'el-barril',
     'el-borracho', 'el-gorrito', 'el-musico', 'el-soldado', 'el-tambor', 'el-violoncello']
 
-  for (k = 0; k < arr.length; k++){
+  for (var k = 0; k < arr.length; k++){
     var randNum = Math.floor(Math.random() * arr.length);
     var temp = arr[k];
     arr[k] = arr[randNum];
     arr[randNum] = temp;
   }
 
-  for (i = 0; i < arr.length; i++){
+  for (var i = 0; i < arr.length; i++){
   var newMain = document.querySelector('#gameCards');
   var newCard = document.createElement('div');
   newCard.classList.add('card', 'col-2');
@@ -115,4 +104,4 @@ function shuffle() {
   newMain.appendChild(newCard);
   }
 }
-shuffle()
+shuffle();
