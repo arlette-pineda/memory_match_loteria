@@ -137,7 +137,6 @@ font-size: 1.2rem;
 
 .modal-content {
   background-color: rgba(54, 90, 209, 0.97);
-  /* border: solid 5px blue; */
   width: 40%;
   height: 50%;
   position: relative;
@@ -146,7 +145,6 @@ font-size: 1.2rem;
   border-radius: 8px;
   color: #ffd11a;
   font-family: 'Poppins', sans-serif;
-  /* font-size: 3rem; */
 }
 
 #reset-button {
@@ -165,7 +163,6 @@ font-size: 1.2rem;
 
 #stats {
   font-size: 2rem;
-  /* text-decoration: underline overline; */
 }
 
 #congrats {
@@ -174,7 +171,4 @@ font-size: 1.2rem;
 
 #main-title {
   color: #ff3300;
-}
-.spanish-trans {
-  text-decoration: none;
 }
