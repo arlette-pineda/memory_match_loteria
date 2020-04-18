@@ -21,10 +21,9 @@ function displayStats(){
 
 function calculateAccuracy(attempts, matches){
   if(!attempts){
-    return "0%"; //if attempts are 0(aka falsy), display 0%
+    return "0%";
   } else {
   return ((Math.trunc((matches / attempts) * 100)) + "%");
-  //will give decimal number then *100 to make whole #, .trunc removes decimals, then add % character
   }
 }
 
