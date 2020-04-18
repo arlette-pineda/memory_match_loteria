@@ -1,6 +1,5 @@
 body {
   height: 97vh;
-  /* height: 97%; */
   background-color: #ffd11a;
 }
 
@@ -9,8 +8,6 @@ body {
   max-width: 1500px;
   margin: auto;
   height: 100%;
-  /* padding-left: 5%; */
-  /* padding-right: 5%; */
   font-family: 'Poppins', sans-serif;
 }
 
@@ -176,21 +173,16 @@ aside {
   }
 
   .row.two {
-    /* display: unset; */
     margin: 0;
     width: 100%;
     flex-direction: column;
 
   }
   aside {
-    /*height: 10%;*/
     width: 100%;
-    /*margin: auto;*/
-    /*padding: 0 .5rem;*/
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    /*padding-bottom: 3.6rem;*/
   }
   .aside-divs{
       margin: 0;
@@ -199,7 +191,6 @@ aside {
      display:none;
   }
   aside div {
-    /*height: 70%;*/
     width: 100%;
     border-radius: 10px;
     margin: .2rem;
