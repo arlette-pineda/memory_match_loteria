@@ -1,5 +1,6 @@
 body {
   height: 97vh;
+  /* height: 97%; */
   background-color: #ffd11a;
 }
 
@@ -8,8 +9,8 @@ body {
   max-width: 1500px;
   margin: auto;
   height: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
+  /* padding-left: 5%; */
+  /* padding-right: 5%; */
   font-family: 'Poppins', sans-serif;
 }
 
@@ -23,7 +24,7 @@ main {
 .card {
   height: 31%;
   width: 15%;
-  margin: 6px;
+  margin: .4rem;
   position: relative;
 }
 
@@ -83,24 +84,12 @@ header {
   font-size: 2rem;
   color: black;
   text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
-}
-
-.row.one {
-  height: 15%;
-  display: flex;
-  justify-content: center;
+  margin: auto;
 }
 
 .row.two {
   height: 80%;
 }
-
-aside {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
 
 .aside-divs {
   height: 13%;
@@ -164,30 +153,53 @@ font-size: 1.2rem;
 #main-title {
   color: #ff3300;
 }
+@media screen and (min-width: 671px) {
+aside {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
-@media screen and (max-width: 710px) {
+}
+
+@media screen and (max-width: 670px) {
   header {
     margin: .5rem auto 0;
   }
 
   header h1 {
-    font-size: 1.5rem;
-  }
-  .row.two {
-    display: unset;
-    margin: 0;
-    flex-wrap: nowrap;
-  }
-  aside {
-    height: 10%;
-    margin: auto;
-    padding: 0 .5rem;
-    display: flex;
-    flex-wrap: nowrap;
+    font-size: 1.2rem;
   }
 
+  p {
+	font-size: .5rem;
+  }
+
+  .row.two {
+    /* display: unset; */
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+
+  }
+  aside {
+    /*height: 10%;*/
+    width: 100%;
+    /*margin: auto;*/
+    /*padding: 0 .5rem;*/
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /*padding-bottom: 3.6rem;*/
+  }
+  .aside-divs{
+      margin: 0;
+  }
+  .aside-divs:first-child{
+     display:none;
+  }
   aside div {
-    height: 70%;
+    /*height: 70%;*/
     width: 100%;
     border-radius: 10px;
     margin: .2rem;
@@ -199,7 +211,8 @@ font-size: 1.2rem;
     padding-top: 1rem;
   }
 
-  /* main div {
+  .card {
     height: 25%;
-  } */
+    width: 12%;
+  }
 }
