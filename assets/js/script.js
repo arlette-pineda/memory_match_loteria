@@ -43,36 +43,36 @@ var gameCards = document.getElementById('gameCards');
 gameCards.addEventListener('click', handleClick);
 
 function handleClick(event){
-  if(event.target.className.indexOf('card-back') === -1){ //if where clicked does not have card-back class, then get out of function, main container will not delete
-    return; //exit out of function
+  if(event.target.className.indexOf('card-back') === -1){
+    return;
   }
-  event.target.className += " hidden"; //adding class of hidden
+  event.target.className += " hidden";
   if(!firstCardClicked){
-    firstCardClicked = event.target; //first one you click now becomes your target
-    firstCardClasses = firstCardClicked.previousElementSibling.className; //
+    firstCardClicked = event.target;
+    firstCardClasses = firstCardClicked.previousElementSibling.className;
     } else {
-    secondCardClicked = event.target; //2nd clicked becomes target
+    secondCardClicked = event.target;
     secondCardClasses = secondCardClicked.previousElementSibling.className;
-    gameCards.removeEventListener('click', handleClick); //container; will not allow to click a third
-    if(firstCardClasses === secondCardClasses){ //if the cards match then...
+    gameCards.removeEventListener('click', handleClick);
+    if(firstCardClasses === secondCardClasses){
       gameCards.addEventListener('click', handleClick);
-      firstCardClicked = null; //will reset card clicked
-      secondCardClicked = null; //will reset card clicked
-      matches++; //increases matches var by 1 when cards match
-      attempts++; //increases attempts by 1 when two cards match
-      displayStats(); //call displayStats function to update stats display
-      if(maxMatches === matches){ //if current # of matches is same as maximum # of matches
-        modal.classList.remove('hidden'); //then show congrats modal
+      firstCardClicked = null;
+      secondCardClicked = null;
+      matches++;
+      attempts++;
+      displayStats();
+      if(maxMatches === matches){
+        modal.classList.remove('hidden');
       }
-    } else { //if the cards do not match then...
-      setTimeout(function(){ //func to turn cards back around
-        firstCardClicked.classList.remove('hidden'); //show back of card again
-        secondCardClicked.classList.remove('hidden'); //show back of card again
-        gameCards.addEventListener('click', handleClick); //then you can click on cards again after others have turned back around
-        firstCardClicked = null; //will reset card clicked
-        secondCardClicked = null; //will reset card clicked
-        attempts++; //increases attempts by 1 when cards don't match
-        displayStats(); //call displayStats function to update stats display
+    } else {
+      setTimeout(function(){
+        firstCardClicked.classList.remove('hidden');
+        secondCardClicked.classList.remove('hidden');
+        gameCards.addEventListener('click', handleClick);
+        firstCardClicked = null;
+        secondCardClicked = null;
+        attempts++;
+        displayStats();
     }, 1000);}
   }
 }
