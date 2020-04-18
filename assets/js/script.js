@@ -10,7 +10,6 @@ var attemptsDiv = document.getElementById('attempts-score');
 var accuracyDiv = document.getElementById('accuracy-score');
 var attempts = 0;
 var gamesPlayed = 0;
-var cardBacks = document.getElementsByClassName('card-back');
 var resetButton = document.getElementById('reset-button');
 
 function displayStats(){
