@@ -37,10 +37,10 @@ function resetGame(){
   modal.classList.add('hidden');
 }
 
-resetButton.addEventListener('click', resetGame); //adding click event on reset button to reset game
+resetButton.addEventListener('click', resetGame);
 
 var gameCards = document.getElementById('gameCards');
-gameCards.addEventListener('click', handleClick); //when card area clicked we want it to...
+gameCards.addEventListener('click', handleClick);
 
 function handleClick(event){
   if(event.target.className.indexOf('card-back') === -1){ //if where clicked does not have card-back class, then get out of function, main container will not delete
