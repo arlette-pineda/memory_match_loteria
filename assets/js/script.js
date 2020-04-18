@@ -16,7 +16,7 @@ var resetButton = document.getElementById('reset-button');
 function displayStats(){
   gaPlayedDiv.textContent = gamesPlayed
   attemptsDiv.textContent = attempts
-  accuracyDiv.textContent = calculateAccuracy(attempts, matches); //giving parameters of attempts and matches
+  accuracyDiv.textContent = calculateAccuracy(attempts, matches);
 }
 
 function calculateAccuracy(attempts, matches){
