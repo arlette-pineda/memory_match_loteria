@@ -28,13 +28,12 @@ function calculateAccuracy(attempts, matches){
 }
 
 function resetGame(){
-  attempts = 0; //resetting to 0
-  matches = 0; //resetting # of matches to 0
-  gamesPlayed++; //incrementing by 1 game each time resetting
-  displayStats(); //
+  attempts = 0;
+  matches = 0;
+  gamesPlayed++;
+  displayStats();
   gameCards.innerText = ""
   shuffle();
-  // accuracyDiv.textContent = 0;
   modal.classList.add('hidden');
 }
 
