@@ -1,4 +1,4 @@
-# memory_match_loteria
+# Memory Match Loteria
 
 A memory matching game built using JavaScript.
 
