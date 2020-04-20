@@ -158,18 +158,19 @@ align-self: center;
 #main-title {
   color: #ff3300;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 671px) {
   aside {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
+}
 
+@media screen and (max-width: 768px) {
     .card {
     height: 18%;
     width: 20%;
   }
-
 }
 
 @media screen and (max-width: 670px) {
@@ -197,7 +198,7 @@ align-self: center;
     flex-wrap: nowrap;
     flex-direction: row;
     margin-top: 10%;
-    margin-left: 3%;
+    margin-left: 1%;
   }
   .aside-divs{
       margin-left: 4%;
@@ -236,7 +237,3 @@ align-self: center;
     width: 12%;
   }
 }
-
-/* @media screen and (max-width: 670px) {
-
-} */
