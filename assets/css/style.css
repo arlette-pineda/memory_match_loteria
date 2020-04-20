@@ -203,6 +203,11 @@ aside {
     padding-top: 1rem;
   }
 
+  .modal-content {
+    width: 60%;
+    height: 40%;
+  }
+
   #congrats {
     font-size: 1.3rem;
   }
