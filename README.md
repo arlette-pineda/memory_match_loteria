@@ -11,7 +11,7 @@ A memory matching game built using JavaScript.
 
 ## Live Demo
 
-Try the application live at [https://memory_match.arlettepineda.com](https://memory_match.arlettepineda.com)
+Try the application live [here](https://memory_match.arlettepineda.com)
 
 ## Features
 
