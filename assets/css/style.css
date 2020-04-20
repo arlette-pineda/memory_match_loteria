@@ -183,6 +183,7 @@ aside {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    /* justify-content: center; */
   }
   .aside-divs{
       margin: 0;
@@ -200,6 +201,14 @@ aside {
     height: 80%;
     margin: auto;
     padding-top: 1rem;
+  }
+
+  #congrats {
+    font-size: 1.3rem;
+  }
+
+  #reset-button {
+    font-size: 1rem;
   }
 
   .card {
