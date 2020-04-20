@@ -88,6 +88,11 @@ header {
   height: 80%;
 }
 
+aside {
+  display: flex;
+  flex-direction: column;
+}
+
 .aside-divs {
   height: 13%;
   width: 85%;
@@ -95,11 +100,14 @@ header {
   margin: auto;
   text-align: center;
   border-radius: 6px;
+  display: flex;
+  justify-content: center;
   text-shadow: 1px 1px 2px white, 0 0 25px #ffd11a, 0 0 5px white;
 }
 
 p {
 font-size: 1.2rem;
+align-self: center;
 }
 
 .display-styling {
@@ -150,12 +158,17 @@ font-size: 1.2rem;
 #main-title {
   color: #ff3300;
 }
-@media screen and (min-width: 671px) {
-aside {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
+@media screen and (max-width: 768px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+    .card {
+    height: 18%;
+    width: 20%;
+  }
 
 }
 
@@ -184,10 +197,11 @@ aside {
     flex-wrap: nowrap;
     flex-direction: row;
     margin-top: 10%;
-    /* justify-content: flex-start; */
+    margin-left: 3%;
   }
   .aside-divs{
-      margin: 0;
+      margin-left: 4%;
+      height: 3rem;
   }
   .aside-divs:first-child{
      display:none;
@@ -222,3 +236,7 @@ aside {
     width: 12%;
   }
 }
+
+/* @media screen and (max-width: 670px) {
+
+} */
