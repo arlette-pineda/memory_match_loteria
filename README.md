@@ -21,7 +21,6 @@ Try the application live [here](https://memory_match.arlettepineda.com)
 
 
 ## Preview
-
-![Loteria Memory Match](guides/images/LoteriaMatch.gif)
+![Loteria Memory Match Preview](MemoryMatchLoteriaPreview.gif "Loteria Memory Match gif")
 
 
