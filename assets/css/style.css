@@ -19,7 +19,7 @@ main {
 }
 
 .card {
-  height: 31%;
+  height: 28%;
   width: 15%;
   margin: .4rem;
   position: relative;
@@ -158,13 +158,6 @@ align-self: center;
 #main-title {
   color: #ff3300;
 }
-@media screen and (min-width: 671px) {
-  aside {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-}
 
 @media screen and (max-width: 783px) {
     .card {
@@ -181,13 +174,17 @@ align-self: center;
   }
 }
 
+@media screen and (min-width: 671px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
 @media screen and (max-width: 670px) {
   header {
     margin: .5rem auto 0;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
   }
 
   p {
