@@ -166,10 +166,14 @@ align-self: center;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 783px) {
     .card {
     height: 18%;
     width: 20%;
+  }
+
+    header h1 {
+    font-size: 1.7rem;
   }
 }
 
@@ -179,7 +183,7 @@ align-self: center;
   }
 
   header h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   p {
