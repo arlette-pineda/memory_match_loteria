@@ -23,6 +23,7 @@ main {
   width: 15%;
   margin: .4rem;
   position: relative;
+  cursor: pointer;
 }
 
 .card-front, .card-back {
