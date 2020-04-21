@@ -32,13 +32,12 @@ Try the application live [here!](https://loteria-memory-match.arlettepineda.com)
 
 ### Getting Started 
 1. Clone the repository.
-```javascript
-git clone https://github.com/arlette-pineda/loteria-memory-match.git
-```
+
+`git clone https://github.com/arlette-pineda/loteria-memory-match.git`
 
 2. Change directory to folder.
-```javascript 
-cd loteria-memory-match
-``` 
+
+`cd loteria-memory-match`
+
 3. View project by opening `index.html` in browser.
 
