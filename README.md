@@ -26,4 +26,19 @@ Try the application live [here!](https://loteria-memory-match.arlettepineda.com)
 ## Preview
 ![Loteria Memory Match Preview](MemoryMatchLoteriaPreview.gif "Loteria Memory Match gif")
 
+## Development 
+### System Requirements 
+- None
+
+### Getting Started 
+1. Clone the repository.
+```javascript
+git clone https://github.com/arlette-pineda/loteria-memory-match.git
+```
+
+2. Change directory to folder.
+```javascript 
+cd loteria-memory-match
+``` 
+3. View project by opening `index.html` in browser.
 
