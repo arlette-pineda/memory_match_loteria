@@ -1,4 +1,4 @@
-# Memory Match Loteria
+# Loteria Memory Match 
 
 A memory matching game built using JavaScript.
 
@@ -11,13 +11,16 @@ A memory matching game built using JavaScript.
 
 ## Live Demo
 
-Try the application live [here](https://loteria-memory-match.arlettepineda.com)
+Try the application live [here!](https://loteria-memory-match.arlettepineda.com)
 
 ## Features
 
 - User can view game.
 - User can flip cards.
 - User can match two cards.
+- User can win game. 
+- User can view stats.
+- User can reset game and play again.
 
 
 ## Preview
