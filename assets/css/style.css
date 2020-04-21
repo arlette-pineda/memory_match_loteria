@@ -19,7 +19,7 @@ main {
 }
 
 .card {
-  height: 31%;
+  height: 28%;
   width: 15%;
   margin: .4rem;
   position: relative;
@@ -36,43 +36,43 @@ main {
 }
 
 .card-back {
-background-image: url(/assets/images/blue.jpg);
+background-image: url(../images/blue.jpg);
 }
 
 .el-arpa {
-  background-image: url(/assets/images/el-arpa.jpg)
+  background-image: url(../images/el-arpa.jpg)
 }
 
 .el-apache {
-  background-image: url(/assets/images/el-apache.jpg);
+  background-image: url(../images/el-apache.jpg);
 }
 
 .el-barril {
-  background-image: url(/assets/images/el-barril.jpg);
+  background-image: url(../images/el-barril.jpg);
 }
 
 .el-borracho {
-  background-image: url(/assets/images/el-borracho.jpg);
+  background-image: url(../images/el-borracho.jpg);
 }
 
 .el-gorrito {
-  background-image: url(/assets/images/el-gorrito.jpg);
+  background-image: url(../images/el-gorrito.jpg);
 }
 
 .el-musico {
-  background-image: url(/assets/images/el-musico.jpg);
+  background-image: url(../images/el-musico.jpg);
 }
 
 .el-soldado {
-  background-image: url(/assets/images/el-soldado.jpg);
+  background-image: url(../images/el-soldado.jpg);
 }
 
 .el-tambor {
-  background-image: url(/assets/images/el-tambor.jpg);
+  background-image: url(../images/el-tambor.jpg);
 }
 
 .el-violoncello {
-  background-image: url(/assets/images/el-violoncello.png);
+  background-image: url(../images/el-violoncello.png);
 }
 
 
@@ -158,6 +158,22 @@ align-self: center;
 #main-title {
   color: #ff3300;
 }
+
+@media screen and (max-width: 783px) {
+    .card {
+    height: 18%;
+    width: 20%;
+  }
+
+    header h1 {
+    font-size: 1.7rem;
+  }
+
+    p {
+	font-size: 1rem;
+  }
+}
+
 @media screen and (min-width: 671px) {
   aside {
     display: flex;
@@ -166,20 +182,9 @@ align-self: center;
   }
 }
 
-@media screen and (max-width: 768px) {
-    .card {
-    height: 18%;
-    width: 20%;
-  }
-}
-
 @media screen and (max-width: 670px) {
   header {
     margin: .5rem auto 0;
-  }
-
-  header h1 {
-    font-size: 1.2rem;
   }
 
   p {
@@ -198,7 +203,7 @@ align-self: center;
     flex-wrap: nowrap;
     flex-direction: row;
     margin-top: 10%;
-    margin-left: 1%;
+    margin-left: 4%;
   }
   .aside-divs{
       margin-left: 4%;
