@@ -168,8 +168,9 @@ align-self: center;
   font-family: 'Poppins', sans-serif;
 }
 
-#win {
-  margin-bottom: 0;
+#win p {
+  display: block;
+  text-align: center;
 }
 
 .contain-conf {
@@ -373,6 +374,15 @@ align-self: center;
     width: 60%;
     height: 55%;
   }
+
+  #win {
+    font-size: .5em;
+  }
+
+  #win p {
+    font-size: 1.7rem;
+  }
+
 }
 
 @media screen and (min-width: 667px) and (max-width: 767px) {
