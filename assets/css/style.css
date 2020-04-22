@@ -155,11 +155,10 @@ align-self: center;
   margin-top: 2%;
   color: #ffd11a;
   font-family: 'Poppins', sans-serif;
-}
-
-#win p {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding-bottom: 4%;
 }
 
 .contain-conf {
