@@ -196,7 +196,7 @@ align-self: center;
 @media screen and (min-width: 667px) and (max-width: 767px) {
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   aside {
@@ -206,6 +206,10 @@ align-self: center;
     display: unset;
   }
 
+  main {
+    height: 85%;
+  }
+
   p {
     font-size: 1rem;
   }
@@ -213,6 +217,19 @@ align-self: center;
   .card {
     width: 12%;
     height: 20%;
+  }
+
+  .modal-content {
+    width: 60%;
+    height: 40%;
+  }
+
+  #congrats {
+    font-size: 1.3rem;
+  }
+
+  #reset-button {
+    font-size: 1rem;
   }
 }
 
@@ -244,6 +261,7 @@ align-self: center;
     flex-direction: row;
     align-items: flex-start;
     margin-top: 10%;
+    /* margin: auto; */
     align-self: center;
     justify-content: space-around;
   }
