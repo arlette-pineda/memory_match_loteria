@@ -1,5 +1,5 @@
 body {
-  height: 97vh;
+  height: 100vh;
   background-color: #ffd11a;
 }
 
@@ -94,6 +94,7 @@ header {
 
 .row.two {
   height: 80%;
+  justify-content: space-around;
 }
 
 aside {
@@ -132,6 +133,7 @@ align-self: center;
   align-items: center;
   height: 100vh;
   width: 100%;
+
 }
 
 .modal-content {
@@ -141,6 +143,8 @@ align-self: center;
   position: relative;
   text-align: center;
   align-items: center;
+  /* margin-right: 4.5%; */
+  /* justify-self: center; */
   border-radius: 8px;
   color: #ffd11a;
   font-family: 'Poppins', sans-serif;
@@ -174,6 +178,14 @@ align-self: center;
     justify-content: space-around;
   }
 
+  aside {
+    height: 90%;
+  }
+
+  main {
+    height: 85%;
+  }
+
   .card {
     height: 18%;
     width: 20%;
@@ -191,12 +203,17 @@ align-self: center;
     width: 14%;
     height: 25%;
   }
+
+  .modal-content {
+    width: 60%;
+    height: 65%;
+  }
 }
 
 @media screen and (min-width: 667px) and (max-width: 767px) {
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   aside {
@@ -206,8 +223,8 @@ align-self: center;
     display: unset;
   }
 
-  main {
-    height: 85%;
+  #gameCards {
+    height: 80%;
   }
 
   p {
@@ -221,7 +238,7 @@ align-self: center;
 
   .modal-content {
     width: 60%;
-    height: 40%;
+    height: 65%;
   }
 
   #congrats {
@@ -261,14 +278,12 @@ align-self: center;
     flex-direction: row;
     align-items: flex-start;
     margin-top: 10%;
-    /* margin: auto; */
     align-self: center;
     justify-content: space-around;
   }
 
   .aside-divs{
       height: 2.5rem;
-      /* width: 80%; */
       margin: 0.5%;
   }
   .aside-divs:first-child{
