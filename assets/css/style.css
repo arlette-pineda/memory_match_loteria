@@ -1,5 +1,5 @@
 body {
-  height: 100vh;
+  height: 95vh;
   background-color: #ffd11a;
 }
 
@@ -7,7 +7,7 @@ body {
   width: 100%;
   max-width: 1500px;
   margin: auto;
-  height: 100%;
+  height: 90vh;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -85,18 +85,32 @@ background-image: url(../images/blue.jpg);
   background-image: url(../images/el-violoncello.png);
 }
 
+.row.one {
+  height: 20vh;
+  display: flex;
+}
 
 header {
+  height: 10%;
+  display: flex;
   justify-content: center;
-  font-size: 2rem;
+  align-items: flex-start;
+  font-size: 5vh;
   color: black;
   text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
   margin: auto;
+  padding-top: 0;
+}
+
+h1 {
+  color: #ff3300;
+  align-self: center;
 }
 
 .row.two {
-  height: 80%;
+  height: 75vh;
   justify-content: center;
+  display: flex;
 }
 
 aside {
@@ -135,7 +149,6 @@ align-self: center;
   align-items: center;
   height: 100vh;
   width: 100%;
-
 }
 
 .modal-content {
@@ -311,8 +324,10 @@ align-self: center;
   font-size: 3rem;
 }
 
-#main-title {
-  color: #ff3300;
+@media screen and (max-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -369,7 +384,6 @@ align-self: center;
   }
 
   #gameCards {
-    padding-top: 2%;
     height: 80%;
   }
 
@@ -398,6 +412,7 @@ align-self: center;
 }
 
 @media screen and (max-width: 666px) {
+
   header {
     text-align: center;
     margin-top: 1.5rem;
