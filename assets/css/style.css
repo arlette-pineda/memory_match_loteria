@@ -1,5 +1,5 @@
 body {
-  height: 97vh;
+  height: 100vh;
   background-color: #ffd11a;
 }
 
@@ -20,7 +20,7 @@ main {
 }
 
 .card {
-  height: 28%;
+  height: 30%;
   width: 15%;
   margin: .4rem;
   position: relative;
@@ -31,6 +31,8 @@ main {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+    border-radius: 6px;
+    box-shadow: -1px -1px 3px 5px #fffbad;
 }
 
 .card-front, .card-back {
@@ -94,6 +96,7 @@ header {
 
 .row.two {
   height: 80%;
+  justify-content: center;
 }
 
 aside {
@@ -132,18 +135,160 @@ align-self: center;
   align-items: center;
   height: 100vh;
   width: 100%;
+
 }
 
 .modal-content {
-  background-color: rgba(54, 90, 209, 0.97);
+  background-color: rgba(0, 158, 16, 0.97);
   width: 40%;
-  height: 50%;
+  height: 65%;
   position: relative;
   text-align: center;
-  align-items: center;
+  align-content: center;
   border-radius: 8px;
+  margin-right: 2%;
+  margin-top: 2%;
   color: #ffd11a;
   font-family: 'Poppins', sans-serif;
+}
+
+#win {
+  margin-bottom: 0;
+}
+
+.contain-conf {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.confetti {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  -webkit-animation: confetti 5s ease-in-out -2s infinite;
+          animation: confetti 5s ease-in-out -2s infinite;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+.confetti:nth-child(1) {
+  background-color: red;
+  left: 10%;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+.confetti:nth-child(2) {
+  background-color: #f2d74e;
+  left: 20%;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+
+}
+
+.confetti:nth-child(3) {
+  background-color: white;
+  left: 30%;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+}
+
+.confetti:nth-child(4) {
+  background-color: #f2d74e;
+  left: 40%;
+  -webkit-animation-delay: -2.5s;
+          animation-delay: -2.5s;
+}
+
+.confetti:nth-child(5) {
+  background-color: red;
+  left: 50%;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+
+.confetti:nth-child(6) {
+  background-color: #f2d74e;
+  left: 60%;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+
+.confetti:nth-child(7) {
+  background-color: #f2d74e;
+  left: 70%;
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+}
+
+.confetti:nth-child(8) {
+  background-color: white;
+  left: 80%;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+.confetti:nth-child(9) {
+  background-color: red;
+  left: 90%;
+  -webkit-animation-delay: -3.5s;
+          animation-delay: -3.5s;
+}
+
+.confetti:nth-child(10) {
+  background-color: #f2d74e;
+  left: 100%;
+  -webkit-animation-delay: -2.5s;
+          animation-delay: -2.5s;
+}
+
+@-webkit-keyframes confetti {
+  0% {
+    -webkit-transform: rotateZ(15deg) rotateY(0deg) translate(0, 0);
+            transform: rotateZ(15deg) rotateY(0deg) translate(0, 0);
+  }
+  25% {
+    -webkit-transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh);
+            transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh);
+  }
+  50% {
+    -webkit-transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 60vh);
+            transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 60vh);
+  }
+  75% {
+    -webkit-transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 80vh);
+            transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 80vh);
+  }
+  100% {
+    -webkit-transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 110vh);
+            transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 110vh);
+  }
+}
+
+@keyframes confetti {
+  0% {
+    -webkit-transform: rotateZ(15deg) rotateY(0deg) translate(0, 0);
+            transform: rotateZ(15deg) rotateY(0deg) translate(0, 0);
+  }
+  25% {
+    -webkit-transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh);
+            transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh);
+  }
+  50% {
+    -webkit-transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 60vh);
+            transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 60vh);
+  }
+  75% {
+    -webkit-transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 80vh);
+            transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 80vh);
+  }
+  100% {
+    -webkit-transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 110vh);
+            transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 110vh);
+  }
 }
 
 #reset-button {
@@ -151,6 +296,8 @@ align-self: center;
   border-radius: 6px;
   padding: 10px;
   font-size: 2.8em;
+  position: relative;
+  z-index: 2;
   background-color: #ff3300;
   color: white;
   border: none;
@@ -160,7 +307,7 @@ align-self: center;
   display: none;
 }
 
-#congrats {
+.congrats {
   font-size: 3rem;
 }
 
@@ -171,16 +318,24 @@ align-self: center;
 @media screen and (max-width: 1024px) and (min-width: 768px) {
 
   .row.two {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
-  .card {
-    height: 18%;
-    width: 20%;
+  aside {
+    height: 80%;
+    margin-top: 2%;
   }
 
-    header h1 {
-    font-size: 2rem;
+  main {
+    height: 85%;
+  }
+
+    header {
+    margin-top: 4%;
+    }
+
+    h1 {
+    font-size: 3rem;
   }
 
     p {
@@ -188,15 +343,22 @@ align-self: center;
   }
 
   .card {
-    width: 14%;
-    height: 25%;
+    width: 15%;
+    height: 28%;
+    margin: 0.5%;
+  }
+
+  .modal-content {
+    align-content: center;
+    width: 60%;
+    height: 55%;
   }
 }
 
 @media screen and (min-width: 667px) and (max-width: 767px) {
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
 
   aside {
@@ -206,19 +368,39 @@ align-self: center;
     display: unset;
   }
 
+  #gameCards {
+    padding-top: 2%;
+    height: 80%;
+  }
+
   p {
     font-size: 1rem;
   }
 
   .card {
-    width: 12%;
-    height: 20%;
+    width: 14%;
+    height: 36%;
+    margin: 0.5%;
+  }
+
+  .modal-content {
+    width: 60%;
+    height: 60%;
+  }
+
+  .congrats {
+    font-size: 1.3rem;
+  }
+
+  #reset-button {
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 666px) {
   header {
-    margin: .5rem auto 0;
+    text-align: center;
+    margin-top: 1.5rem;
   }
 
   h1 {
@@ -226,7 +408,7 @@ align-self: center;
   }
 
   p {
-	font-size: .5rem;
+	font-size: .2rem;
   }
 
   .row.two {
@@ -250,7 +432,6 @@ align-self: center;
 
   .aside-divs{
       height: 2.5rem;
-      /* width: 80%; */
       margin: 0.5%;
   }
   .aside-divs:first-child{
@@ -269,11 +450,11 @@ align-self: center;
   }
 
   .modal-content {
-    width: 60%;
-    height: 40%;
+    width: 70%;
+    height: 35%;
   }
 
-  #congrats {
+  .congrats {
     font-size: 1.3rem;
   }
 
