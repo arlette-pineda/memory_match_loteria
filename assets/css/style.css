@@ -27,12 +27,15 @@ main {
   cursor: pointer;
 }
 
-.card-back:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.05);
-    border-radius: 6px;
-    box-shadow: -1px -1px 3px 5px #fffbad;
+.card-back:hover, #reset-button:hover {
+  box-shadow:  0 0 10px 5px #fffbad;
+      -moz-box-shadow: 0 0 10px  5px #fffbad;
+      -webkit-box-shadow: 0 0 10px 5px #fffbad;
+      -o-box-shadow: 0 0 10px 5px #fffbad;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .card-front, .card-back {
@@ -316,6 +319,8 @@ align-self: center;
   border: none;
 }
 
+
+
 .hidden {
   display: none;
 }
@@ -399,7 +404,7 @@ align-self: center;
 
   .modal-content {
     width: 60%;
-    height: 60%;
+    height: 50%;
   }
 
   .congrats {
