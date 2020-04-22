@@ -137,22 +137,27 @@ align-self: center;
 }
 
 .modal-content {
-  background-color: rgba(54, 90, 209, 0.97);
+  background-color: rgba(0, 158, 16, 0.97);
   width: 40%;
-  height: 50%;
+  height: 65%;
   position: relative;
   text-align: center;
-  align-items: center;
+  align-content: center;
   border-radius: 8px;
+  margin-right: 2%;
+  margin-top: 2%;
   color: #ffd11a;
   font-family: 'Poppins', sans-serif;
+}
+
+#win {
+  margin-bottom: 0;
 }
 
 .contain-conf {
   width: 100%;
   height: 100%;
   position: absolute;
-  /* z-index: 1; */
 }
 
 .confetti {
@@ -300,7 +305,7 @@ align-self: center;
   display: none;
 }
 
-#congrats {
+.congrats {
   font-size: 3rem;
 }
 
@@ -328,7 +333,7 @@ align-self: center;
   }
 
     header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
     p {
@@ -341,15 +346,16 @@ align-self: center;
   }
 
   .modal-content {
+    align-content: center;
     width: 60%;
-    height: 65%;
+    height: 55%;
   }
 }
 
 @media screen and (min-width: 667px) and (max-width: 767px) {
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
 
   aside {
@@ -374,10 +380,10 @@ align-self: center;
 
   .modal-content {
     width: 60%;
-    height: 65%;
+    height: 60%;
   }
 
-  #congrats {
+  .congrats {
     font-size: 1.3rem;
   }
 
@@ -438,11 +444,11 @@ align-self: center;
   }
 
   .modal-content {
-    width: 60%;
-    height: 40%;
+    width: 70%;
+    height: 35%;
   }
 
-  #congrats {
+  .congrats {
     font-size: 1.3rem;
   }
 
