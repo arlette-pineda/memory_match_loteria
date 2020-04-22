@@ -27,17 +27,6 @@ main {
   cursor: pointer;
 }
 
-.card-back:hover, #reset-button:hover {
-  box-shadow:  0 0 10px 5px #fffbad;
-      -moz-box-shadow: 0 0 10px  5px #fffbad;
-      -webkit-box-shadow: 0 0 10px 5px #fffbad;
-      -o-box-shadow: 0 0 10px 5px #fffbad;
-  cursor: pointer;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.05);
-}
-
 .card-front, .card-back {
   height: 100%;
   width: 100%;
@@ -320,14 +309,25 @@ align-self: center;
   border: none;
 }
 
-
-
 .hidden {
   display: none;
 }
 
 .congrats {
   font-size: 3rem;
+}
+
+@media (hover: hover) {
+  .card-back:hover, #reset-button:hover {
+    box-shadow:  0 0 10px 5px #fffbad;
+        -moz-box-shadow: 0 0 10px  5px #fffbad;
+        -webkit-box-shadow: 0 0 10px 5px #fffbad;
+        -o-box-shadow: 0 0 10px 5px #fffbad;
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.05);
+  }
 }
 
 @media screen and (max-width: 1024px) {
