@@ -1,5 +1,9 @@
 body {
-  height: 95vh;
+  height: 100vh;
+  background-image: url(../images/yellow.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #ffd11a;
 }
 
@@ -105,6 +109,11 @@ h1 {
   display: flex;
 }
 
+#win p {
+  font-weight: 700;
+  text-shadow: 3px 2px red;
+}
+
 aside {
   display: flex;
   flex-direction: column;
@@ -144,21 +153,26 @@ align-self: center;
 }
 
 .modal-content {
-  background-color: rgba(0, 158, 16, 0.97);
+  background-color: rgba(156, 194, 212, 0.97);
+  background-image: url(../images/cactus.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 40%;
   height: 65%;
   position: relative;
   text-align: center;
   align-content: center;
-  border-radius: 8px;
+  border: 2px solid black;
+  outline: 15px solid white;
   margin-right: 2%;
   margin-top: 2%;
-  color: #ffd11a;
+  color: white;
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-padding-bottom: 4%;
+  padding-bottom: 4%;
 }
 
 .contain-conf {
@@ -398,6 +412,10 @@ padding-bottom: 4%;
     display: unset;
   }
 
+  .row.two {
+    margin-top: 3%;
+  }
+
   #gameCards {
     height: 80%;
   }
@@ -443,6 +461,7 @@ padding-bottom: 4%;
 
   .row.one {
     height: 12vh;
+    margin-top: 5%;
   }
 
   .row.two {
