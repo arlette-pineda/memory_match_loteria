@@ -1,6 +1,6 @@
 # Loteria Memory Match 
 
-A memory matching game built using JavaScript.
+A lotería (popular Mexican bingo game) themed memory matching game built using JavaScript.
 
 ## Technologies Used
 
